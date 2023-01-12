@@ -34,4 +34,5 @@ curl https://get.acme.sh | sh
 # edit trojan-go config.json
 vim /etc/trojan-go/config.json
 systemctl restart trojan-go
+systemctl enable trojan-go
 ```
