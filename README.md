@@ -8,7 +8,7 @@ mkdir -p "/etc/trojan-go"
 cd `mktemp -d`
 wget -nv "${trojango_link}" -O trojan-go.zip
 unzip -q trojan-go.zip && rm -rf trojan-go.zip
-mv trojan-go /usr/bin/trojan-go && chmod +x /usr/bin/trojan-go
+mv trojan-go /usr/bin/ && chmod +x /usr/bin/trojan-go
 mv geoip.dat /etc/trojan-go/geoip.dat
 mv geosite.dat /etc/trojan-go/geosite.dat
 mv example/trojan-go.service /etc/systemd/system/trojan-go.service
